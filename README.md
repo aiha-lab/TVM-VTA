@@ -1,5 +1,5 @@
 # TVM-VTA
-## setting
+## setting (ENVIRONMENT : Can Use LLVM, CUDA, FSIM, TSIM, Verilator (+sbt), pytorch, tvmc commmand)
 
 -----
 ## <Write command in HOME directory>
