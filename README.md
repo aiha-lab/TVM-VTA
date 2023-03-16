@@ -1,10 +1,9 @@
-# TVM-VTA
-## setting (ENVIRONMENT : Can Use LLVM, CUDA, FSIM, TSIM, Verilator (+sbt), pytorch, tvmc commmand)
+# TVM-VTA (Setting)
 
+## ENVIRONMENT : Can Use LLVM, CUDA, FSIM, TSIM, Verilator (+sbt), pytorch, tvmc commmand
 -----
 ## <Write command in HOME directory>
-  
-  
+
 ####   1. git clone --recursive https://github.com/aiha-lab/TVM-VTA.git TVM_VTA
   
 ####   2. cd TVM_VTA
