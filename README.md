@@ -1,4 +1,4 @@
-# TVM-VTA
+# TVM-VTA (Setting)
 ## ENVIRONMENT : Can Use LLVM, CUDA, FSIM, TSIM, Verilator (+sbt), pytorch, tvmc commmand
 
 -----
