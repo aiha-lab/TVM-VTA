@@ -3,6 +3,8 @@ setting
 
 -----
 <Write command in HOME directory>
+  
+  
 1. git clone --recursive https://github.com/aiha-lab/TVM-VTA.git TVM_VTA
   
 2. cd TVM_VTA
