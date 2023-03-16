@@ -1,0 +1,8 @@
+#TVM path
+export TVM_HOME=~/tvm/
+export TVM_PATH=~/tvm/
+export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
+
+#VTA path
+export PYTHONPATH=$TVM_HOME/vta/python:${PYTHONPATH}
+export VTA_HW_PATH=$TVM_PATH/3rdparty/vta-hw/
