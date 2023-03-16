@@ -28,6 +28,7 @@ sudo cp -R * /usr/local/
 sudo apt-get install libssl-dev
 sudo apt install mesa-common-dev libglu1-mesa-dev
 
+
 #Install sbt&verilator
 sudo apt-get update
 sudo apt-get install apt-transport-https curl gnupg -yqq
@@ -38,6 +39,7 @@ sudo chmod 644 /etc/apt/trusted.gpg.d/scalasbt-release.gpg
 sudo apt-get update
 sudo apt-get install sbt verilator
 
+
 #Install CMAKE
 cd ~
 wget https://github.com/Kitware/CMake/releases/download/v3.26.0-rc4/cmake-3.26.0-rc4.tar.gz
@@ -45,38 +47,19 @@ tar -xvzf cmake-3.26.0-rc4.tar.gz
 cd cmake-3.26.0-rc4
 ./bootstrap
 #thread를 최대한 이용하는 방향으로 수정하는 것을 권장(시간이 오래걸림)
-make -j40
-sudo make install -j40
+make -j128
+sudo make install -j128
 
 
 #Add TVM path
 echo 'export TVM_HOME=~/tvm/' >> ~/.bashrc
 echo 'export TVM_PATH=~/tvm/' >> ~/.bashrc
 echo 'export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}' >> ~/.bashrc
-
 #Add VTA path
 echo 'export PYTHONPATH=$TVM_HOME/vta/python:${PYTHONPATH}' >> ~/.bashrc
 echo 'export VTA_HW_PATH=$TVM_PATH/3rdparty/vta-hw/' >> ~/.bashrc
 
-#Apply bashrc
-source ~/.bashrc
 
-
-#Build TVM
-cd ~/tvm/build
-cmake ..
- #thread를 최대한 이용하는 방향으로 수정하는 것을 권장(시간이 오래걸림)
-make -j40
-
-
-#"tvm-build" environment setting
-cd ..
-conda env create --file conda/build-environment.yaml
-conda activate tvm-build
-pip3 install --user numpy decorator attrs
-pip3 install --user typing-extensions
-pip3 install --user tornado
-pip3 install --user tornado psutil 'xgboost>=1.1.0' cloudpickle
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo apt-get update
-sudo apt-get upgrade libstdc++6
+#Comment
+echo "type 'source ~/.bashrc'"
+echo "change {HOME} to '$HOME' at 145th line of '$HOME/tvm/build/config.cmake:145'"

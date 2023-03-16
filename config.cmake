@@ -142,7 +142,7 @@ set(USE_MICRO_STANDALONE_RUNTIME OFF)
 set(USE_LLVM ON)
 set(USE_LLVM ~/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin/llvm-config)
 set(USE_LLVM llvm-config-15)
-set(USE_LLVM "~/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin/llvm-config --link-static")
+set(USE_LLVM "{HOME}/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04/bin/llvm-config --link-static")
 set(HIDE_PRIVATE_SYMBOLS ON)
 
 #---------------------------------------------
