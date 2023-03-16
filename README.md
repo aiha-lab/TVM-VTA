@@ -1,6 +1,6 @@
 # TVM-VTA (Setting)
 
-## ENVIRONMENT : Can Use LLVM, CUDA, FSIM, TSIM, Verilator (+sbt), pytorch, tvmc commmand
+## ENVIRONMENT : Can Use Anaconda, LLVM, CUDA, FSIM, TSIM, Verilator (+sbt), pytorch, tvmc commmand
 -----
 ## <Write command in HOME directory>
 
