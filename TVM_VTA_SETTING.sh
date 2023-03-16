@@ -35,7 +35,8 @@ wget https://github.com/Kitware/CMake/releases/download/v3.26.0-rc4/cmake-3.26.0
 tar -xvzf cmake-3.26.0-rc4.tar.gz
 cd cmake-3.26.0-rc4
 ./bootstrap
-make -j40               #thread를 최대한 이용하는 방향으로 수정하는 것을 권장(시간이 오래걸림)
+#thread를 최대한 이용하는 방향으로 수정하는 것을 권장(시간이 오래걸림)
+make -j40
 sudo make install -j40
 
 
