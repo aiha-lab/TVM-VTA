@@ -56,7 +56,9 @@ source ~/.bashrc
 #Build TVM
 cd ~/tvm/build
 cmake ..
-make -j40               #thread를 최대한 이용하는 방향으로 수정하는 것을 권장(시간이 오래걸림)
+ #thread를 최대한 이용하는 방향으로 수정하는 것을 권장(시간이 오래걸림)
+make -j40
+
 
 #"tvm-build" environment setting
 cd ..
