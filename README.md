@@ -6,7 +6,7 @@
 
 #### 1.   git clone --recursive https://github.com/aiha-lab/TVM-VTA.git TVM_VTA
   
-#### 2.   cd TVM_VTA
+#### 2.   cd TVM-VTA
   
 #### 3.   chmod +x TVM_VTA_SETTING_1.sh
 
